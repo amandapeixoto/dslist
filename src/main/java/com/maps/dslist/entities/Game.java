@@ -17,14 +17,12 @@ public class Game {
     private String genre;
     private String platforms;
     private Double score;
-
-    @Column(name = "img_url")
     private String imgUrl;
 
-    @Column(name = "short_description")
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
 
-    @Column(name = "long_description")
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {
