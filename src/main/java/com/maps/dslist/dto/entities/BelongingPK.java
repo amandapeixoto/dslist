@@ -1,4 +1,4 @@
-package com.maps.dslist.entities;
+package com.maps.dslist.dto.entities;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;

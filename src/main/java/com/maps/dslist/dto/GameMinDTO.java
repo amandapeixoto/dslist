@@ -1,6 +1,6 @@
 package com.maps.dslist.dto;
 
-import com.maps.dslist.entities.Game;
+import com.maps.dslist.dto.entities.Game;
 
 public class GameMinDTO {
 
