@@ -1,6 +1,6 @@
 package com.maps.dslist.dto;
 
-import com.maps.dslist.dto.entities.Game;
+import com.maps.dslist.entities.Game;
 import org.springframework.beans.BeanUtils;
 
 public class GameDTO {

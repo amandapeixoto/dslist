@@ -2,7 +2,6 @@ package com.maps.dslist.controllers;
 
 import com.maps.dslist.dto.GameDTO;
 import com.maps.dslist.dto.GameMinDTO;
-import com.maps.dslist.dto.entities.Game;
 import com.maps.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -2,7 +2,7 @@ package com.maps.dslist.services;
 
 import com.maps.dslist.dto.GameDTO;
 import com.maps.dslist.dto.GameMinDTO;
-import com.maps.dslist.dto.entities.Game;
+import com.maps.dslist.entities.Game;
 import com.maps.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
