@@ -5,10 +5,7 @@ import com.maps.dslist.dto.GameMinDTO;
 import com.maps.dslist.services.GameListService;
 import com.maps.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,4 +30,21 @@ public class GameListController {
         List<GameMinDTO> result = gameService.findByList(listId);
         return result;
     }
+
+    @PostMapping
+    public GameListDTO insert(@RequestBody GameListDTO dto) {
+        return gameListService.insert(dto);
+    }
+
+    @PutMapping("/{id}")
+    public GameListDTO update(@PathVariable Long id, @RequestBody GameListDTO dto) {
+        return gameListService.update(id, dto);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        gameListService.delete(id);
+    }
+
+
 }
